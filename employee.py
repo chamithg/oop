@@ -23,4 +23,4 @@ employee_list = [new_employee, new_employee2, new_employee3]
 #or.. we can just creat a list of employee objects.
 
 for employee in employee_list:
-    print(f"{employee.full_name()}")  # calling the full name method instead of  return f"{employee.first_name}{employee.last_name}"
+    print(f'{employee.full_name()}')  # calling the full name method instead of  return f"{employee.first_name}{employee.last_name}"
