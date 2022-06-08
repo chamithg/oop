@@ -7,7 +7,7 @@ class BankAccount:
         self.account_name = account_name
         self.balance = balance   
         self.int_rate= int_rate
-        return None 
+        
         
     def deposit(self, amount):
         self.balance += amount
@@ -37,7 +37,8 @@ class User:
     def __init__(self,name,account_name, balance):
         self.name = name
         self.account = BankAccount(account_name,balance, int_rate = 1.5)
-        return None 
+        self.account = BankAccount(account_name,balance, int_rate = 1.5)
+        
         
     def make_deposit(self,dep_amount):
         self.account.deposit(dep_amount)
@@ -55,7 +56,7 @@ class User:
         return self
     
     def __str__(self):
-        return self.name + "--> " + str(self.account)                
+        return (self.name + "--> " + str(self.account)_)                
     
 #!user class ends
 

@@ -21,7 +21,7 @@ class User:
         return self
     
     def __str__(self):
-        print(self.name + "-->" + str(self.balance ))
+        print(f"{self.name} -->  {self.balance }")
         
         return self
             
